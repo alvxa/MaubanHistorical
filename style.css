@@ -16,6 +16,11 @@
   --gold-light: #D4B88C;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   background-color: var(--parchment);
   color: var(--charcoal);
@@ -23,6 +28,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 L20 12 L30 16 L20 20 L16 30 L12 20 L2 16 L12 12 Z' fill='none' stroke='%23C5A16A' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23C5A16A'/%3E%3C/svg%3E") 16 16, auto;
 }
@@ -52,6 +58,7 @@ button {
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -119,6 +126,7 @@ button {
   top: 0;
   z-index: 1000;
   transition: background 0.3s;
+  width: 100%;
 }
 
 .navbar .container {
@@ -301,6 +309,7 @@ button {
   align-items: center;
   background: var(--charcoal);
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-image-wrapper {
@@ -411,6 +420,7 @@ button {
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .about-grid {
@@ -509,6 +519,7 @@ button {
   background: var(--forest);
   padding: 5rem 0;
   position: relative;
+  width: 100%;
 }
 
 .explore-section::before {
@@ -597,6 +608,8 @@ button {
 .featured-section {
   background: var(--parchment);
   padding: 5rem 0;
+  width: 100%;
+  overflow: hidden; /* Prevents horizontal scrolling */
 }
 
 .featured-scroll-wrapper {
@@ -720,6 +733,7 @@ mark {
 /* ---------- PAGE CONTENT ---------- */
 .page-section {
   padding: 4rem 0 5rem;
+  width: 100%;
 }
 
 .page-section .container {
@@ -1192,6 +1206,7 @@ mark {
   background: var(--ivory);
   padding: 4rem 0 5rem;
   border-top: 1px solid var(--gold-dim);
+  width: 100%;
 }
 
 .map-container {
@@ -1231,6 +1246,7 @@ mark {
   text-align: center;
   padding: 3rem 0 2rem;
   border-top: 2px solid var(--gold);
+  width: 100%;
 }
 
 .footer-ornament {
