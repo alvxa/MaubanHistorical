@@ -1,15 +1,18 @@
-Mauban, Quezon — History Lives Here
+Mauban, Quezon - History Lives Here
+
 A static educational website dedicated to the history, cultural heritage, natural attractions, and historical landmarks of Mauban, Quezon, Philippines.
 
 📖 About the Project
+
 This website presents:
-History of Mauban — from its Franciscan roots to the present day
 
-Natural Attractions — beaches, sandbars, and waterfalls
+History of Mauban - from its Franciscan roots to the present day
 
-Heritage Houses — Spanish colonial-era ancestral homes
+Natural Attractions - beaches, sandbars, and waterfalls
 
-Historical Landmarks — churches, parks, monuments, and modern sites
+Heritage Houses - Spanish colonial-era ancestral homes
+
+Historical Landmarks - churches, parks, monuments, and modern sites
 
 Interactive Map of Mauban
 
@@ -20,6 +23,7 @@ Hero image slider that rotates automatically
 It is a non-commercial, educational project built with pure HTML, CSS, and JavaScript - no frameworks, no build step required.
 
 ✨ Features
+
 ✅ Fully responsive (mobile, tablet, desktop)
 
 ✅ Sticky navigation with active section highlighting
@@ -51,9 +55,11 @@ It is a non-commercial, educational project built with pure HTML, CSS, and JavaS
 ✅ Keyboard accessible (Escape closes lightbox/search)
 
 📄 License & Credits
+
 This is a non-commercial, educational project. Historical information and images are drawn from local sources, public archives, and community-contributed materials. Where possible, original photographs and references have been used with respect for their licensing and access permissions.
 
 All images are used for illustrative purposes and may not depict exact locations. Please refer to original sources for verified historical data.
 
 🤝 Contributing
+
 Contributions welcome - corrected historical info, additional photos, bug fixes, or accessibility improvements. Open an issue or submit a pull request.
