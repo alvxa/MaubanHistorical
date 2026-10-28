@@ -1395,11 +1395,13 @@ mark {
     background: var(--forest);
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
+    /* Changed to flex-start and allow wrapping for long titles */
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 6rem 2rem 2rem 2rem;
     transition: right 0.35s ease;
-    /* The border-left is replaced by the ::before pseudo-element for a more controlled length */
     box-shadow: -8px 0 30px rgba(0, 0, 0, 0.4);
+    overflow-y: auto; /* Allow scrolling if menu is too tall */
   }
 
   /* Add the vertical dividing line */
@@ -1407,8 +1409,8 @@ mark {
     content: '';
     position: absolute;
     left: 0;
-    top: 10%; /* Start slightly lower */
-    height: 80%; /* End slightly higher, creating a "sakto" length */
+    top: 10%;
+    height: 80%;
     width: 1.5px;
     background-color: var(--gold);
     opacity: 0.8;
@@ -1420,6 +1422,9 @@ mark {
 
   .nav-links a {
     font-size: 0.9rem;
+    width: 100%;
+    display: block; /* Ensure links take full width for wrapping */
+    padding-left: 1rem; /* Add some padding so text doesn't touch the line */
   }
 
   .nav-search-area {
