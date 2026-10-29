@@ -41,7 +41,6 @@
     navItems.forEach(function(link) {
       link.classList.remove('active');
       const href = link.getAttribute('href').replace('#', '');
-      // Only highlight if the href matches the current section id
       if (href === current) {
         link.classList.add('active');
       }
@@ -77,29 +76,50 @@
   }
 
   // ==========================================
-  // 4. Lightbox for Heritage Cards
+  // 4. UNIVERSAL LIGHTBOX LOGIC
   // ==========================================
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxClose = document.getElementById('lightboxClose');
   const flashcardTrack = document.getElementById('flashcardTrack');
 
-  if (flashcardTrack) {
-    flashcardTrack.addEventListener('click', function(e) {
-      const card = e.target.closest('.flashcard');
-      if (card) {
-        if (card.getAttribute('data-pos') === '0') {
-          const imgSrc = card.getAttribute('data-lightbox');
+  // Handle all images with the 'lightbox-trigger' class
+  const allImages = document.querySelectorAll('.lightbox-trigger, .flashcard');
+  
+  allImages.forEach(imgOrCard => {
+    imgOrCard.addEventListener('click', function(e) {
+      // If it's a flashcard, check if it's the center card
+      if (this.classList.contains('flashcard')) {
+        if (this.getAttribute('data-pos') === '0') {
+          const imgSrc = this.getAttribute('data-lightbox');
           if (imgSrc) {
             lightboxImg.src = imgSrc;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
           }
         }
+      } 
+      // If it's a regular image trigger
+      else {
+        // Prevent the click from bubbling if it's inside a link (like the attraction cards)
+        // unless it's the image itself being clicked.
+        if (e.target.tagName === 'IMG' || e.currentTarget.tagName === 'IMG') {
+           const src = this.getAttribute('src');
+           const dataSrc = this.getAttribute('data-src');
+           
+           // For hero slider, we want the current src, not the data-src list
+           if (src) {
+               lightboxImg.src = src;
+               lightbox.classList.add('active');
+               document.body.style.overflow = 'hidden';
+               e.preventDefault(); // Prevent any link navigation
+           }
+        }
       }
     });
-  }
+  });
 
+  // Close lightbox
   if (lightboxClose) {
     lightboxClose.addEventListener('click', function() {
       lightbox.classList.remove('active');
