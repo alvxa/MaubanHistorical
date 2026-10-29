@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mauban, Quezon - History Lives Here</title>
+  <title>Mauban, Quezon — History Lives Here</title>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,10 @@
            id="heroSliderImg"
            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80';" 
            alt="Mauban, Quezon" 
-           loading="eager">
+           loading="eager"
+           fetchpriority="high"
+           decoding="async"
+           class="lightbox-trigger">
     </div>
     <div class="container">
       <div class="hero-content">
@@ -74,7 +77,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-illustration">
-          <img src="saint.jpg" alt="Saint Bonaventure Parish Church illustration" loading="lazy">
+          <img src="saint.jpg" alt="Saint Bonaventure Parish Church illustration" loading="lazy" decoding="async" class="lightbox-trigger">
         </div>
         <div class="about-text">
           <h2>About Mauban</h2>
@@ -84,9 +87,9 @@
             Learn More About Mauban <span class="arrow">→</span>
           </a>
           <div class="about-collage">
-            <img src="4.jpg" alt="Historical building" loading="lazy">
-            <img src="yangin.jpg" alt="Beach" loading="lazy">
-            <img src="alitap.jpg" alt="Waterfall" loading="lazy">
+            <img src="4.jpg" alt="Historical building" loading="lazy" decoding="async" class="lightbox-trigger">
+            <img src="yangin.jpg" alt="Beach" loading="lazy" decoding="async" class="lightbox-trigger">
+            <img src="alitap.jpg" alt="Waterfall" loading="lazy" decoding="async" class="lightbox-trigger">
           </div>
         </div>
       </div>
@@ -136,10 +139,21 @@
 
       <div class="featured-scroll-wrapper">
         <div class="featured-scroll" id="featuredScroll">
+           <!-- 0 -->
+          <a href="#natural" class="attraction-card" data-title="Hagdan-Hagdan">
+            <div class="attraction-card-img">
+              <img src="hagdan.png" alt="Hagdan-Hagdan" loading="lazy" decoding="async" class="lightbox-trigger">
+            </div>
+            <div class="attraction-card-body">
+              <h3>Hagdan-Hagdan</h3>
+              <p>A series of short, broad cascades along the Balaybalay River.</p>
+              <span class="arrow-link">Discover <span class="arrow">→</span></span>
+            </div>
+          </a>
           <!-- 1 -->
           <a href="#natural" class="attraction-card" data-title="Cagbalete Island">
             <div class="attraction-card-img">
-              <img src="cagbalete.jpg" alt="Cagbalete Island" loading="lazy">
+              <img src="cagbalete.jpg" alt="Cagbalete Island" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Cagbalete Island</h3>
@@ -150,7 +164,7 @@
           <!-- 2 -->
           <a href="#natural" class="attraction-card" data-title="Dahoyhoy Falls">
             <div class="attraction-card-img">
-              <img src="dahoyhoy.jpg" alt="Dahoyhoy Falls" loading="lazy">
+              <img src="dahoyhoy.jpg" alt="Dahoyhoy Falls" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Dahoyhoy Falls</h3>
@@ -161,7 +175,7 @@
           <!-- 3 -->
           <a href="#heritage" class="attraction-card" data-title="Ancestral Houses">
             <div class="attraction-card-img">
-              <img src="5.jpg" alt="Ancestral Houses" loading="lazy">
+              <img src="5.jpg" alt="Ancestral Houses" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Ancestral Houses</h3>
@@ -172,7 +186,7 @@
           <!-- 4 -->
           <a href="#landmarks" class="attraction-card" data-title="Mauban Seawall">
             <div class="attraction-card-img">
-              <img src="seawall.jpg" alt="Mauban Seawall" loading="lazy">
+              <img src="seawall.jpg" alt="Mauban Seawall" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Mauban Seawall</h3>
@@ -183,7 +197,7 @@
           <!-- 5 -->
           <a href="#landmarks" class="attraction-card" data-title="Mauban Public Bath">
             <div class="attraction-card-img">
-              <img src="publicbath.jpg" alt="Mauban Public Bath" loading="lazy">
+              <img src="publicbath.jpg" alt="Mauban Public Bath" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Mauban Public Bath</h3>
@@ -194,7 +208,7 @@
           <!-- 6 -->
           <a href="#landmarks" class="attraction-card" data-title="Gatuban Park">
             <div class="attraction-card-img">
-              <img src="gatuban.jpg" alt="Gatuban Park" loading="lazy">
+              <img src="gatuban.jpg" alt="Gatuban Park" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Gatuban Park</h3>
@@ -205,7 +219,7 @@
           <!-- 7 -->
           <a href="#landmarks" class="attraction-card" data-title="Quezon Power Plant">
             <div class="attraction-card-img">
-              <img src="powerplant.png" alt="Quezon Power Plant" loading="lazy">
+              <img src="powerplant.png" alt="Quezon Power Plant" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Quezon Power Plant</h3>
@@ -213,21 +227,10 @@
               <span class="arrow-link">Discover <span class="arrow">→</span></span>
             </div>
           </a>
-          <!-- 9 -->
-          <a href="#natural" class="attraction-card" data-title="Hagdan-Hagdan Falls">
-            <div class="attraction-card-img">
-              <img src="hagdan.png" alt="Hagdan" loading="lazy">
-            </div>
-            <div class="attraction-card-body">
-              <h3>Hagdan-Hagdan Falls</h3>
-              <p>A series of short, broad cascades along the Balaybalay River.</p>
-              <span class="arrow-link">Discover <span class="arrow">→</span></span>
-            </div>
-          </a>
           <!-- 8 -->
           <a href="#natural" class="attraction-card" data-title="Bulwagin Beach">
             <div class="attraction-card-img">
-              <img src="bulwagin.jpg" alt="Bulwagin Beach" loading="lazy">
+              <img src="bulwagin.jpg" alt="Bulwagin Beach" loading="lazy" decoding="async" class="lightbox-trigger">
             </div>
             <div class="attraction-card-body">
               <h3>Bulwagin Beach</h3>
@@ -248,7 +251,7 @@
       <p class="page-intro">A town shaped by the sea, faith, and resilience — from its Franciscan roots to the present day.</p>
 
       <div class="image-panel">
-        <img src="saint.jpg" alt="Saint Bonaventure Parish Church" loading="lazy">
+        <img src="saint.jpg" alt="Saint Bonaventure Parish Church" loading="lazy" decoding="async" class="lightbox-trigger">
         <div class="image-caption">Saint Bonaventure Parish Church, Mauban</div>
       </div>
 
@@ -295,7 +298,7 @@
 
       <div class="attraction-page-grid">
         <div class="attraction-page-card">
-          <img src="cagbalete.jpg" alt="Cagbalete Island" loading="lazy">
+          <img src="cagbalete.jpg" alt="Cagbalete Island" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Cagbalete Island</h3>
             <p>Famous for its creamy white sand and turquoise waters, the shoreline changes dramatically with the tides. During low tide, exposed sand ripples create a unique and breathtaking landscape.</p>
@@ -303,7 +306,7 @@
           </div>
         </div>
         <div class="attraction-page-card">
-          <img src="yangin.jpg" alt="Yang-In Sandbar" loading="lazy">
+          <img src="yangin.jpg" alt="Yang-In Sandbar" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Yang-In Sandbar</h3>
             <p>This sandbar becomes a wide sandy expanse during low tide and transforms into a shallow swimming area during high tide, offering a dynamic coastal experience.</p>
@@ -311,7 +314,7 @@
           </div>
         </div>
         <div class="attraction-page-card">
-          <img src="dahoyhoy.jpg" alt="Dahoyhoy Falls" loading="lazy">
+          <img src="dahoyhoy.jpg" alt="Dahoyhoy Falls" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Dahoyhoy Falls</h3>
             <p>Accessible via a paved trail, this waterfall offers an easy trek to a refreshing natural pool surrounded by lush greenery, a perfect escape into nature.</p>
@@ -319,7 +322,7 @@
           </div>
         </div>
         <div class="attraction-page-card">
-          <img src="alitap.jpg" alt="Alitap Falls" loading="lazy">
+          <img src="alitap.jpg" alt="Alitap Falls" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Alitap Falls</h3>
             <p>Set in a forest setting, Alitap Falls is now more accessible thanks to road development, with a shorter trail leading visitors to its cool waters.</p>
@@ -327,7 +330,7 @@
           </div>
         </div>
         <div class="attraction-page-card">
-          <img src="hagdan.png" alt="Hagdan-Hagdan Falls" loading="lazy">
+          <img src="hagdan.png" alt="Hagdan-Hagdan Falls" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Hagdan-Hagdan Falls</h3>
             <p>A series of short, broad cascades along the Balaybalay River. Finding a reliable local guide is essential to safely explore this hidden gem.</p>
@@ -335,7 +338,7 @@
           </div>
         </div>
         <div class="attraction-page-card">
-          <img src="bisibis.jpg" alt="Bisibis Falls" loading="lazy">
+          <img src="bisibis.jpg" alt="Bisibis Falls" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Bisibis Falls</h3>
             <p>Located near the sea, Bisibis Falls is accessible by boat from Barangay Cagsiay III, offering a unique coastal waterfall experience.</p>
@@ -344,7 +347,7 @@
         </div>
         <!-- Bulwagin Beach -->
         <div class="attraction-page-card">
-          <img src="bulwagin.jpg" alt="Bulwagin Beach" loading="lazy">
+          <img src="bulwagin.jpg" alt="Bulwagin Beach" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Bulwagin Beach</h3>
             <p>A white sand beach known for its scenic views, including a unique perspective of the power plant's lights at night. It is a quiet spot for locals and visitors seeking a different kind of coastal experience.</p>
@@ -368,7 +371,7 @@
         <div class="flashcard-track" id="flashcardTrack">
           <!-- Card 1 -->
           <div class="flashcard" data-lightbox="1.jpg">
-            <img src="1.jpg" alt="Heritage House" loading="lazy">
+            <img src="1.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>A fine example of colonial architecture.</p>
@@ -376,7 +379,7 @@
           </div>
           <!-- Card 2 -->
           <div class="flashcard" data-lightbox="2.jpg">
-            <img src="2.jpg" alt="Heritage House" loading="lazy">
+            <img src="2.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>Steeped in history and local lore.</p>
@@ -384,7 +387,7 @@
           </div>
           <!-- Card 3 -->
           <div class="flashcard" data-lightbox="3.jpg">
-            <img src="3.jpg" alt="Heritage House" loading="lazy">
+            <img src="3.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>Preserving the town's architectural heritage.</p>
@@ -392,7 +395,7 @@
           </div>
           <!-- Card 4 -->
           <div class="flashcard" data-lightbox="4.jpg">
-            <img src="4.jpg" alt="Heritage House" loading="lazy">
+            <img src="4.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>A window into Mauban's past.</p>
@@ -400,7 +403,7 @@
           </div>
           <!-- Card 5 -->
           <div class="flashcard" data-lightbox="5.jpg">
-            <img src="5.jpg" alt="Heritage House" loading="lazy">
+            <img src="5.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>Colonial charm in every corner.</p>
@@ -408,7 +411,7 @@
           </div>
           <!-- Card 6 -->
           <div class="flashcard" data-lightbox="6.jpg">
-            <img src="6.jpg" alt="Heritage House" loading="lazy">
+            <img src="6.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>A testament to the town's enduring legacy.</p>
@@ -416,7 +419,7 @@
           </div>
           <!-- Card 7 -->
           <div class="flashcard" data-lightbox="7.jpg">
-            <img src="7.jpg" alt="Heritage House" loading="lazy">
+            <img src="7.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>Echoes of a bygone era.</p>
@@ -424,7 +427,7 @@
           </div>
           <!-- Card 8 -->
           <div class="flashcard" data-lightbox="8.jpg">
-            <img src="8.jpg" alt="Heritage House" loading="lazy">
+            <img src="8.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>Architectural beauty preserved.</p>
@@ -432,7 +435,7 @@
           </div>
           <!-- Card 9 -->
           <div class="flashcard" data-lightbox="9.jpg">
-            <img src="9.jpg" alt="Heritage House" loading="lazy">
+            <img src="9.jpg" alt="Heritage House" loading="lazy" decoding="async">
             <div class="flashcard-body">
               <h3>Heritage House</h3>
               <p>A glimpse into the past.</p>
@@ -456,7 +459,7 @@
       <div class="attraction-page-grid">
         <!-- Landmark 1 -->
         <div class="attraction-page-card">
-          <img src="rizal.jpg" alt="Rizal Hill Park" loading="lazy">
+          <img src="rizal.jpg" alt="Rizal Hill Park" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Rizal Hill Park</h3>
             <p>Historically known as Calvario Hill, this site features the Rizal Monument and served as an observation post during World War II, offering a panoramic view of the town and its surroundings.</p>
@@ -465,7 +468,7 @@
         </div>
         <!-- Landmark 2 -->
         <div class="attraction-page-card">
-          <img src="seawall.jpg" alt="Mauban Seawall" loading="lazy">
+          <img src="seawall.jpg" alt="Mauban Seawall" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Mauban Seawall</h3>
             <p>More than a coastal defense, the seawall holds cultural significance. It features the Gatuban monument and is remembered for its role during the Japanese landing in Quezon in 1941.</p>
@@ -474,7 +477,7 @@
         </div>
         <!-- Landmark 3 -->
         <div class="attraction-page-card">
-          <img src="publicbath.jpg" alt="Mauban Public Bath" loading="lazy">
+          <img src="publicbath.jpg" alt="Mauban Public Bath" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Mauban Public Bath</h3>
             <p>Reportedly constructed in 1725, this historic structure was built using limestone and seashells. It once supplied spring water to the community and is now preserved as a cherished historical landmark.</p>
@@ -483,7 +486,7 @@
         </div>
         <!-- Landmark 4 -->
         <div class="attraction-page-card">
-          <img src="gatuban.jpg" alt="Gatuban Park" loading="lazy">
+          <img src="gatuban.jpg" alt="Gatuban Park" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Gatuban Park</h3>
             <p>A public park dedicated to Gatuban, the legendary defender of Mauban. It serves as a memorial to his bravery and the town's enduring spirit.</p>
@@ -492,7 +495,7 @@
         </div>
         <!-- Landmark 5 -->
         <div class="attraction-page-card">
-          <img src="powerplant.png" alt="Quezon Power Plant" loading="lazy">
+          <img src="powerplant.png" alt="Quezon Power Plant" loading="lazy" decoding="async" class="lightbox-trigger">
           <div class="attraction-page-card-body">
             <h3>Quezon Power Plant</h3>
             <p>A major coal-fired power facility in Barangay Cagsiay I that has been supplying electricity to the Luzon grid since 2000. It is a key part of the town's modern industrial landscape.</p>
@@ -503,6 +506,7 @@
     </div>
   </section>
 
+  <!-- ==================== ABOUT PAGE ==================== -->
   <section class="page-section" id="about-page" style="background: var(--ivory);">
     <div class="container">
       <h2 class="page-title">Preserving the Stories of Mauban</h2>
@@ -523,6 +527,7 @@
     </div>
   </section>
 
+  <!-- ==================== MAP SECTION ==================== -->
   <section class="map-section" id="map">
     <div class="container">
       <h2 class="section-heading">Map of Mauban</h2>
@@ -540,6 +545,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-ornament"><span>✦</span></div>
@@ -559,12 +565,16 @@
     </div>
   </footer>
 
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightboxClose">&times;</span>
     <img src="" alt="Enlarged view" id="lightboxImg">
   </div>
 
+  <!-- BACK TO TOP -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
